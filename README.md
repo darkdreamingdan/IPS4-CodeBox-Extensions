@@ -15,6 +15,7 @@ This is not a normal IPS4 extension, and instead requires minor modification to 
  3. Choose "Edit HTML and CSS"
  4. In the 'Templates' tab, access `core/global/global/includeJS`
  5. At the very bottom, add the following two lines:
+    
     ```html
     <script type='text/javascript' src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.12/dist/clipboard.min.js"></script>
     <script type='text/javascript' src="https://cdn.rawgit.com/darkdreamingdan/IPS4-CodeBox-Extensions/master/ips4_code_ext.min.js"></script>
