@@ -1,12 +1,12 @@
 function cb_onRePrettyPrinted (){
-  	// Apply MTA Markup to the final prettified code
-    applyMTAMarkup();	
+	// Apply MTA Markup to the final prettified code
+	applyMTAMarkup();	
 }
 
 function cb_onQuoted ( pre ) {
 	// Get rid of any MTA highlights
-    pre.find('span.mta_highlight').replaceWith(function() { return $(this).contents(); });
-    pre.find('a.mta_highlight').replaceWith(function() { return $(this).contents(); });
+	pre.find('span.mta_highlight').replaceWith(function() { return $(this).contents(); });
+	pre.find('a.mta_highlight').replaceWith(function() { return $(this).contents(); });
 }
 
 function cb_onContentChanged () {
